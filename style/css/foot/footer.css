@@ -1,3 +1,22 @@
+.backToTop {
+    display: none;
+    width: 22px;
+    height: 52px;
+    background: black url(../../img/footer/top.gif) no-repeat 0 0; 
+    position: fixed;
+    _position: absolute;
+    right: 10px;
+    bottom: 100px;
+    _bottom: "auto";
+    cursor: pointer; 
+    opacity: 0.6;
+    filter: Alpha(opacity=60);
+}
+.backToTop:hover{
+    border: 1px solid black;
+}
+
+
 /*尾部开始*/
 #footer_wrap{
     width:100%;
@@ -43,57 +62,3 @@
     color:#fff;
     text-decoration:underline;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

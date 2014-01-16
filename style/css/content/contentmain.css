@@ -1,15 +1,34 @@
 #maincontent {
     background:#fff url(../../img/lunboimg/focus_loading.gif) center center  no-repeat;
-    height:714px;overflow:hidden;
+    height:714px;
     width:100%;
-    position:relative;
-    float:left;
+    margin:0 auto;
+    overflow: hidden;    
+    position: relative;
+
 }
 
-#maincontent .pict { 
-    width:980px;
-    position:relative;
+#content{
+
+    height:714px;
+    width:990px;
+    margin:0 auto;
+    position: relative;
 }
+
+#widgets{
+    background: #FFF;
+    height: 714px;
+    width: 10000px;
+    position: absolute;
+    left:-990px;
+}
+#maincontent .pict {  
+
+    margin-right: 10px;
+    width:980px;
+    float: left;
+    }
 
 #maincontent .pict a h3{
     color:#222;
@@ -43,7 +62,7 @@
     border-bottom:1px solid #fff;
     float:left;
     margin-top:5px;
-    font-weight:normal
+    font-weight:normal;
 }
 
 #maincontent .pict a .p1{left:20px;top:60px;}
@@ -73,14 +92,15 @@
 }
 
 #maincontent .element {
-    display: none;
-    position: absolute !important;background:#fff
+    /*display: none;*/
+    
 }
 
 #maincontent .left,#maincontent .right{
+    position: absolute;
     width:980px;
-    top :0px;
-    left: 0;
+    top :0;
+    left:-1px;
     cursor: pointer;
     background:url(../../img/lunboimg/focusfade.png) repeat-x;_background:#fff;/*background: rgba(255, 255, 255, 0.8);filter:alpha(opacity=80);-moz-opacity:0.8;-khtml-opacity:0.8; opacity:0.8;*/
 }
@@ -118,16 +138,12 @@
 
 #maincontent .navi img{
     opacity:1;
-    margin-top:300px
+    margin-top:300px;
 }
 
-div#maincontent div.main{
-    display:none;
-}
 
-div#maincontent div.element{
-    position:absolute !important;
-}
+
+
 
 
 
@@ -162,7 +178,7 @@ div#maincontent div.element{
 #grid_wrap .grid ol li a,#grid_wrap .grid ol p a,#grid_wrap .grid ul li a {width:100%;float:left;color:#333;text-decoration:none;}
 #grid_wrap .grid ol li a:hover,#grid_wrap .grid ol p a:hover,#grid_wrap .grid ul li a:hover{width:100%;color:#666;text-decoration:none}
 #grid_wrap .grid ol .email{width:163px;background:#fff;border:1px solid #666;border-right:none;margin:10px 0 10px 5%;float:left;padding:0 5px;font:9pt microsoft yahei,arial;height:20px;line-height:20px}
-#grid_wrap .grid ol .send{width:30px;height:22px;background:#fff url(images/arrow.gif) center no-repeat;border:1px solid #666;border-left:none;float:left;margin:10px 0 10px 0;cursor:pointer}
+#grid_wrap .grid ol .send{width:30px;height:22px;background:#fff url(../../img/content/arrow.gif) center no-repeat;border:1px solid #666;border-left:none;float:left;margin:10px 0 10px 0;cursor:pointer}
 #grid_wrap .grid ol h3{width:90%;padding:0 5% ;line-height:20px;text-align:left;font:bold 12pt microsoft yahei,arial;float:left}
 #grid_wrap .grid ol p{width:208px;margin-left:10px;float:left;/*letter-spacing:1px;*/line-height:18px;display:inline;}
 #grid_wrap .grid ol p strong{color:#333;width:100%;margin-bottom:5px;display:block;}
