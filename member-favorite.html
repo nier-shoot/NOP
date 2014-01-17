@@ -1,0 +1,442 @@
+
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <link type="image/x-icon" href="style/img/header/favicon.ico" rel="icon">
+  <link type="image/x-icon" href="style/img/header/favicon.ico" rel="bookmark">
+  <link rel="stylesheet" type="text/css" href="style/css/header/header.css"/>
+  <link rel="stylesheet" type="text/css" href="style/css/member/member.css"/>
+  <link rel="stylesheet" type="text/css" href="style/css/foot/footer.css"/>
+  <script type="text/javascript" src="style/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="style/js/index.js"></script>
+  <title>会员中心</title>
+</head>
+<body>
+  <div id="header_wrap">
+    <div class="header">
+      <span class="logo">
+        <a href="">NOP</a> 
+      </span>
+      <span class="topmenu">
+        <div id="">
+          <ul>
+          <li class='login'>
+            <a href="javascript:void(0)">快捷登录</a>
+          </li>
+          <li class='register'>
+            <a href="javascript:void(0)">注册</a>
+          </li>
+          <li>//</li>
+          <li>
+            <a href="">
+            购物车商品(<span style="color:red;"> 0 </span>),  合计
+            <span style="color:red;"> 0 </span>元， 去结账 
+            </a>
+            <ul> </ul>
+          </li>
+          <li>
+            <a class='zhzx' href="">账户中心</a>
+            <ul style="display:none">
+              <li>
+                <a target="_self" href="">我的订单</a>
+              </li> 
+              <li>
+                <a target="_self" href="">我的收藏</a>
+              </li> 
+              <li>
+                <a target="_self" href="">个人信息</a>
+              </li> 
+              <li>
+                <a target="_self" href="">修改密码</a>
+              </li> 
+            </ul>
+          </li>
+          </ul>
+        </div>
+      </span>
+      <span class="search">
+        <form id="frmKey" class="SearchBar" method="post" action="">
+          <input id="skey" class="kw" type="text" name="name[]" value="SEARCH" onclick="OnEnter(this)" onblur="OnExit(this)">
+          <input id="button" class="send" type="button" onclick="search();" onfocus="this.blur();" name="button">
+        </form>
+      </span>
+
+      <!-- 头部导航开始 -->
+
+      <div class="nav_box"> 
+        <ul id="topnav"> 
+          <li class="un_f">
+            <a title="首页" href="/">首页</a></li>  
+          <li cate="c143" class="un_f">
+            <a title="特惠区" href="">特惠区</a></li>  
+          <li cate="c151" class="un_f">
+            <a title="秒杀区" href="">秒杀区</a></li>  
+          <li cate="c139" class="un_f">
+            <a title="羽绒服" href="">羽绒服</a>  </li>  
+          <li cate="c21" class="un_f">
+            <a title="棉服" href="">棉服</a>  </li>  
+          <li cate="c19" class="un_f">
+            <a title="外套" href="">外套</a>  </li>  
+          <li cate="c29" class="un_f">
+            <a title="针织衫" href="">针织衫</a>  </li>  
+          <li cate="c147" class="un_f">
+            <a title="冬季必备" href="">冬季必备</a></li>
+          <li cate="c123" class="un_f">
+            <a title="衬衫" href="">衬衫</a>  </li>  
+          <li cate="c23" class="un_f">
+            <a title="卫衣帽衫" href="">卫衣帽衫</a>  </li>  
+          <li cate="c25" class="un_f">
+            <a title="休闲裤" href="">休闲裤</a>  </li>  
+          <li cate="c27" class="un_f">
+            <a title="牛仔裤" href="">牛仔裤</a>  </li>  
+          <li cate="c17" class="un_f">
+            <a title="T恤" href="">T恤</a>  </li>  
+          <li class="c33">
+            <a title="鞋包配饰" href="">鞋包配饰</a>  
+            <span class="sub" style="opacity: 0.95;"> 
+              <span> 
+                <ul>  
+                  <li>
+                    <a title="围巾" href="">围巾</a>
+                  </li>  
+                  <li>
+                    <a title="包" href="">包</a></li>  
+                  <li>
+                    <a title="钱包" href="">钱包</a>
+                  </li>  
+                  <li>
+                    <a title="皮带" href="">皮带</a>
+                  </li>  
+                  <li>
+                    <a title="饰品" href="">饰品</a>
+                  </li>  
+                  <li><a title="眼镜" href="">眼镜</a>
+                  </li>  
+                  <li>
+                    <a title="礼物" href="">礼物</a>
+                  </li>  
+                  <li>
+                    <a title="收纳" href="">收纳</a>
+                  </li>  
+                  <li>
+                    <a title="帽子" href="">帽子</a>
+                  </li>  
+                  <li>
+                    <a title="手套" href="">手套</a>
+                  </li>  
+                </ul> 
+              </span>
+            </span>  
+          </li>  
+          <li class="c33">
+            <a title="全部商品" href="">全部商品</a>  
+            <span class="sub" style="opacity: 0.95;"> 
+              <span> 
+                <ul>  
+                  <li>
+                    <a title="羽绒服" href="">羽绒服</a>
+                  </li>  
+                  <li>
+                    <a title="大衣风衣" href="">大衣风衣</a>
+                  </li>  
+                  <li>
+                    <a title="外套" href="">外套</a>
+                  </li>  
+                  <li>
+                    <a title="针织衫" href="">针织衫</a>
+                  </li>  
+                  <li>
+                    <a title="衬衫" href="">衬衫</a>
+                  </li>  
+                  <li>
+                    <a title="西服" href="">西服</a>
+                  </li>  
+                  <li>
+                    <a title="长裤" href="">长裤</a>
+                  </li>  
+                  <li>
+                    <a title="牛仔裤" href="">牛仔裤</a>
+                  </li>  
+                  <li>
+                    <a title="卫衣帽衫" href="">卫衣帽衫</a>
+                  </li>  
+                  <li>
+                    <a title="短裤" href="">短裤</a>
+                  </li>  
+                  <li>
+                    <a title="T恤" href="">T恤</a>
+                  </li>  
+                  <li>
+                    <a title="鞋靴" href="">鞋靴</a>
+                  </li>  
+                  <li>
+                    <a title="包" href="">包</a>
+                  </li>  
+                  <li><a title="配饰" href="">配饰</a>
+                  </li>  
+                </ul> 
+              </span>
+            </span>  
+          </li>  
+        <li cate="t13" class="un_f">
+          <a style="color:#b00;text-decoration:none" title="Final Sale" href="">Sale</a>
+        </li> 
+       </ul> 
+      </div>
+      <!-- 登陆 -->
+      <div class='mask' style="width: 100%; height: 100%; display: none; background: none repeat scroll 0% 0% rgb(68, 68, 68); visibility: visible; opacity: 0.7; position: fixed; left: 0px; top: 0px; z-index: 290;"></div>
+
+      <div id="dialog1" class="dialog mini-passport-dialog" style="width: 522px; height: auto; visibility: visible; opacity: 1; position: fixed; top: -162px; left: 413px; display: none;z-index:400">
+
+        <div id="pop_dailog"> 
+          <div class="close">X</div> <h1>会员登录</h1> 
+          <div class="content">
+            <form class="submitform" action="http://www.nop.cn/passport-verify.html" method="post">  
+              <input type="hidden" value="1" name="from_minipassport"> 
+              <ul> 
+                <li>EMAIL<br> 
+                  <input type="text" value="yin_zengfeng@163.com" tabindex="1" id="in_login" required="true" name="login" class="x-input inputstyle" autocomplete="off"> 
+                </li> 
+                <li>密码<br>
+                  <input type="password" tabindex="2" id="in_passwd" required="true" name="passwd" class="x-input inputstyle" autocomplete="off">
+                </li> 
+                <li>
+                  <input type="checkbox" style="width:auto;float:left;margin:0 5px 0 0;padding:0;height:20px" value="on" id="showpass" name="showpass"> <span>显示密码</span>
+                  <input type="button" class="btn" tabindex="4" act="loginform" value="登录">
+                  <input type="button" class="fp" value="忘记密码？" id="resetpwd" name="resetpwd">
+                </li> 
+                <li><span id="msg_error"></span>
+                </li> <h1>快捷登录<br></h1> 
+                <li>
+                  <a onclick="toLogin('http://www.nop.cn/api/sina/index.php');" href="javascript:;"><span title="新浪微博登录" style="color:#666;text-decoration:none;margin-right:5px"><img src="../themes/nop/images/sina.png"></span></a> 
+                  <a onclick="toLogin('http://www.nop.cn/api/qq/index.php');" href="javascript:;"><span title="腾讯QQ登录" style="color:#666;text-decoration:none;margin-right:5px"><img src="../themes/nop/images/qq.png"></span>
+                  </a> 
+                  <a onclick="toLogin('http://www.nop.cn/api/alipay/index.php');" href="javascript:;"><span title="支付宝登录" style="color:#666;text-decoration:none;"><img src="../themes/nop/images/alipay.png"></span>
+                  </a>
+                </li> 
+              </ul> 
+            </form>
+          </div> 
+        </div> 
+      </div>
+
+
+      <div class="dialog mini-passport-dialog" id="dialog1" style="width: 522px; height: auto; visibility: visible; opacity: 1; position: fixed; top: -153px; left: 413px;z-index:400;display:none;"> 
+        <div id="pop_dailog"> 
+          <div class="close">X</div> 
+          <h1>会员注册</h1> 
+          <div class="content">
+            <form class="submitform" name='register' action="http://www.nop.cn/passport-create.html" method="post">  
+              <input type="hidden" value="1" name="from_minipassport"> 
+              <input type="hidden" value="agree" name="license"> 
+              <ul> 
+                <li step="one">用户名(您的邮箱)<br> 
+                  <input type="text" value="" maxlength="50" id="uname" required="true" vtype="required" name="uname" class="x-input inputstyle" autocomplete="off"> 
+                </li> 
+                <li step="one">
+                  <span id="err_uname"></span>
+                  <input type="button" onclick="inputCheck('uname');" class="btn" value="下一步" id="nextstep" name="nextstep">
+                </li> 
+                <li step="two" style="display: none;">用户名<br>
+                  <span id="unametip"></span>
+                </li> 
+                <li step="two" style="display: none;">密码 (6到16位数字或字母)<br>
+                  <input type="password" maxlength="16" required="true" vtype="required" id="in_passwd" name="passwd" class="x-input inputstyle" autocomplete="off">
+                </li> 
+                <li step="two" style="display: none;">
+                  <span id="msg_error"></span>
+                </li> 
+                <li step="two" style="display: none;">
+                  <label for="showpass"><input type="checkbox" style="width:auto;float:left;margin:0 5px 0 0;padding:0;height:20px" value="on" id="showpass" name="showpass"> 
+                  <span>显示密码</span>
+                  </label> 
+                  <input type="button" class="btn" value="完成注册并登录" act="signupform">
+                </li> 
+              </ul> 
+            </form> 
+          </div> 
+        </div> 
+      </div>
+      <!-- 导航结束 -->
+    </div>
+  </div>
+
+
+ 
+
+
+
+
+
+
+
+  
+<div class="AllWrapInside">    
+<div class="MemberCenter"> <!--
+<div style="width:100%;float:left;margin:0 0 10px 0;border-top:1px solid #efefef">
+  </div>--> <!-- 
+  <div class="siteparttitle">  
+  <div class="gender">
+  </div>  
+  <div class="info"> <strong>您好：yin_zengfeng@163.com</strong>&nbsp;&nbsp;[<a class="lnk" href="http://www.nop.cn/member.html">会员中心</a>]&nbsp;&nbsp;[<a class="lnk" href="http://www.nop.cn/passport-logout.html">退出</a>] 
+  </div> 
+  <div class="time">
+  </div> 
+  <div style="clear:both;">
+  </div> 
+  </div>--> 
+  <div class="MemberSidebar"> 
+    <div class="MemberMenu"> <!-- 
+  <div class="title">
+  </div>--> 
+      <div class="body"> 
+        <ul>  
+          <li class="MemberMenuList">
+            <span style="border: medium none;" class="">
+              <div style="margin-top:5px" class="m_0 mfont">交易记录
+              </div>
+            </span> 
+            <ul style="background: none repeat scroll 0% 0% rgb(255, 255, 255);">  
+              <li>
+                <a target="_self" href="http://www.nop.cn/member-orders.html">我的订单</a>
+              </li>  
+              <li>
+                <a target="_self" href="http://www.nop.cn/member-memberplan.html">我的级别</a>
+              </li>  
+              <li>
+                <a target="_self" href="http://www.nop.cn/member-coupon.html">我的优惠券</a>
+              </li>  
+              <li>
+                <a target="_self" href="http://www.nop.cn/member-inbox.html">我的消息</a>
+              </li>  
+            </ul> 
+          </li>  
+          <li class="MemberMenuList">
+            <span>
+              <div style="margin-top:5px" class="m_1 mfont">收藏夹</div>
+            </span> 
+            <ul>  
+              <li>
+                <a target="_self" href="http://www.nop.cn/member-favorite.html">我的收藏</a>
+              </li>  
+            </ul>       
+          </li>  
+          <li class="MemberMenuList">
+            <span>
+              <div style="margin-top:5px" class="m_2 mfont">商品留言</div>
+            </span> 
+            <ul>  
+              <li>
+                <a target="_self" href="http://www.nop.cn/member-comment.html">咨询评论</a>
+              </li>  
+            </ul> 
+          </li>  
+          <li class="MemberMenuList">
+            <span>
+              <div style="margin-top:5px" class="m_3 mfont">个人设置</div>
+            </span> 
+            <ul>  
+              <li>
+                <a target="_self" href="http://www.nop.cn/member-setting.html">个人信息</a>
+              </li>  
+              <li>
+                <a target="_self" href="http://www.nop.cn/member-security.html">修改密码</a>
+              </li>  
+              <li>
+                <a target="_self" href="http://www.nop.cn/member-receiver.html">收货地址</a>
+              </li>  
+            </ul> 
+          </li>  
+          <li class="MemberMenuList">
+            <span>
+              <div style="margin-top:5px" class="m_4 mfont">帐户余额</div>
+            </span> 
+            <ul>  
+              <li>
+                <a target="_self" href="http://www.nop.cn/member-balance.html">我的帐户余额</a>
+              </li>  
+            </ul> 
+          </li>  
+        </ul> 
+      </div> 
+      <div class="foot"></div> 
+    </div> 
+  </div> 
+<style type="text/css"> 
+    .igrid{width:380px;border:1px solid #ddd;color:#333;background:#f9f9f9;float:left;padding:5px ;margin:0 5px 5px 0} 
+    .iright{float:right} 
+</style> 
+
+
+
+      <div class="MemberMain"> <div> <div class="title">我的收藏</div>  <div id="mbc-my-fav" class="GoodsSearchWrap"> <div class="ItemsWarp clearfix">  <div id="goods_2131" product="2131" style="width:200px;float:left;border-bottom:none" class="items-list"> <table width="200" cellspacing="0" cellpadding="0" border="0"> <tbody><tr> <td width="200"><a title="时尚牛仔休闲风衣 藏蓝色" href="http://www.nop.cn/product-2131.html" style="display:block;"><img alt="时尚牛仔休闲风衣 藏蓝色" src="http://img.nop.cn/product/shangzhuang/002000087050/d1.jpg!small"></a></td> </tr> <tr><td style="text-align:center"> <span color:#b00"="" class="&lt;span style=">特惠区商品</span>"&gt;<span style="color:#b00">特惠区商品</span> <br></td></tr> <tr> <td valign="middle" align="center" style="word-break: break-all;padding:3px 0;text-align:center"><a title="时尚牛仔休闲风衣 藏蓝色" href="http://www.nop.cn/product-2131.html">时尚牛仔休闲风衣 藏蓝色</a> <!----></td> </tr> <tr><td valign="middle" align="center"> <span style="color:#bb0000;word-break: break-all;text-align:center"></span></td></tr> <tr> <td width="200" valign="middle" align="center"><ul> <li><span class="nprice mfont">￥299.00</span></li>  </ul></td> </tr> <tr> <td width="180" valign="middle" align="center" style="padding-left:10px"><ul class="button">  <li style="z-index:10;position:relative;float:left;display:inline" class="mfont buy-select"> <a style="text-indent:0;color:#fff;width:65px;margin:0;text-align:center;padding:0 3px;background:#666;border:1px solid #666;height:20px;line-height:20px;float:left" class="lnk">加入购物车</a>  </li> <li style="width:65px;color:333;"><a onclick="doDelFav('2131')" style="width:65px;float:left;background:none;text-indent:0;text-align:center;padding:0 3px;border:1px solid #666;height:20px;line-height:20px">删除收藏</a></li> </ul></td> </tr> </tbody></table> </div>  </div> </div>  <script>
+  function doDelFav(gid){
+    if(!confirm('确定删除?'))return false;
+    new Request({
+        onComplete:function(){
+           new Fx.Style($('goods_'+gid),'opacity').start(0).chain(function(){
+                $('goods_'+gid).remove();
+           });
+        }
+    }).post('index.php?member-'+ gid +'-ajaxDelFav.html',$H({t:$time()}));
+    $('goods_'+gid).setOpacity(.5);
+    var FAVCOOKIE= new Cookie('S[GFAV]',{duration:365});
+    FAVCOOKIE.write($splat((FAVCOOKIE.read('S[GFAV]')||'').split(',')).erase(gid).join(','));
+  return false;
+  }
+</script> </div> </div>
+  <div class="clear"></div>
+
+
+
+
+
+
+  <!-- 尾部开始 -->
+
+  <div id="footer_wrap"> 
+    <div class="footer"> 
+      <ul> 
+        <li>客户服务热线（免长途费）<br> 400-009-1616</li> 
+        <li>工作时间<br> 周一至周六 9:00-18:00</li> 
+        <li>联系我们<br> <a href="">info@nopshop.com</a></li> 
+      </ul> 
+      <ul> 
+        <li><a target="_self" href="">品牌介绍</a></li> 
+        <li><a target="_self" href="">加入我们</a></li> 
+        <li><a target="_self" href="">咨询评论</a></li> 
+        <li><a target="_self" href="">专题回顾</a></li> 
+        <li><a target="_self" href="">隐私声明</a></li> 
+        <li><a target="_self" href="">网站地图</a></li> 
+        <li><a target="_self" href="">友情链接</a></li> 
+      </ul> 
+      <ul> 
+        <li><a target="_self" href="">新手指南</a>
+        </li> 
+        <li><a target="_self" href="">尺码对照</a>
+        </li> 
+        <li><a target="_self" href="">支付方式</a></li> 
+        <li><a target="_self" href="">银行支付说明</a></li> 
+        <li><a target="_self" href="">配送方式</a></li> 
+        <li><a target="_self" href="">售后服务</a></li> 
+        <li><a target="_self" href="">会员计划</a></li> 
+        <li><a target="_self" href="">优惠券使用说明</a></li> 
+      </ul> 
+      <ul> 
+        <li><a target="_blank" href="">NopStyle</a></li> 
+        <li><a target="_blank" href="">NOP官方微博</a></li> 
+        <li><a target="_blank" href="">NOP豆瓣小站</a></li> 
+        <li>NOP微信帐号</li> 
+        <li><img src="style/img/footer/nop_wx_qr.jpg"></li> 
+      </ul> 
+      <ul> 
+        <li>&copy;2013 NOP Fashion Limited</li> 
+        <li>北京吾诺普科技有限公司</li> 
+        <li>京ICP备11018296号</li> 
+        <li>京公网安备110105007135</li> 
+      </ul> 
+    </div> 
+  </div>
+</body>
+</html>

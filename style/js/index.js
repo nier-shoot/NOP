@@ -113,7 +113,7 @@ $(function(){
   		$('ul.slides li').stop().eq(m).animate({opacity:1}, 500).siblings().stop().animate({opacity:0}, 500);
   		$('.flex-control-nav li').find('a').removeClass('active');
  		$('.flex-control-nav li').eq(m).find('a').addClass('active');
- 		timer=setInterval(autorun,3000);
+ 		timer=setInterval(autorun2,3000);
  		  	});
 
   	  	$('ul.flex-direction-nav .prev').click(function(){
@@ -123,7 +123,7 @@ $(function(){
   		$('ul.slides li').stop().eq(m).animate({opacity:1}, 500).siblings().stop().animate({opacity:0}, 500);
   		$('.flex-control-nav li').find('a').removeClass('active');
  		$('.flex-control-nav li').eq(m).find('a').addClass('active');
- 		timer=setInterval(autorun,3000);
+ 		timer=setInterval(autorun2,3000);
   	});	
 
   	  	$('.flex-control-nav li').click(function(){
@@ -132,12 +132,12 @@ $(function(){
   	  		$('ul.slides li').stop().eq(m).animate({opacity:1}, 500).siblings().stop().animate({opacity:0}, 500);
   	  		$('.flex-control-nav li a').removeClass('active');
   	  		$(this).find('a').addClass('active');
-  	  		timer=setInterval(autorun,3000);
+  	  		timer=setInterval(autorun2,3000);
   	  	});
   	  	$('ul.slides').hover(function() {
   	  		clearInterval(timer);
   	  	}, function() {
-  	  		timer=setInterval(autorun,3000);
+  	  		timer=setInterval(autorun2,3000);
   	  	});
   	  	function autorun2(){
   	  	m++;
